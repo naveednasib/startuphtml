@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+// @font-face {
+//     font-family: 'TeXGyreAdventor';
+//     src: url($fontpath +  '/TeXGyreAdventor-Regular.eot'); /* IE9 Compat Modes */
+//     src: url($fontpath +  '/TeXGyreAdventor-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   
+//          url($fontpath +  '/TeXGyreAdventor-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+//          url($fontpath +  '/TeXGyreAdventor-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+//          url($fontpath +  '/TeXGyreAdventor-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+//   }
+.mid-container{
+    max-width: 1170px;   
+    margin:auto;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+*{
+    font-family: 'Raleway', 'times new roman','Times,serif';
+}
+
+
+/*~~~~~~  margins  $DefaultPadding refer from varaible in framework folder  ~~~~~~ */
+
+.mr-auto{
+    margin:auto;
+}
+
+.p-15{
+    padding:$default-margin;
+}
+
+.p-l{
+    padding-left:$default-margin;
+}
+
+.p-t{
+    padding-top:$default-margin;
+}
+
+.p-b{
+    padding-top:$default-margin;
+}
+
+.p-r{
+    padding-right:$default-margin;
+}
+
+/*~~~~~~ paddings $DefaultPadding refer from varaible in framework folder ~~~~~~ */
+
+
+.p-0{
+padding:0;
+}
+
+.d-p{ /*padding equaly from 4 side */
+    padding:$default-padding;
+}
+
+.p-l{
+    padding-left:$default-padding;
+}
+
+.p-t{
+    padding-top:$default-padding;
+}
+
+.p-b{
+    padding-top:$default-padding;
+}
+
+.p-r{
+    padding-right:$default-padding;
+}
+
+
+
+/*borders */
+
+ .b-r{ /*border-raidus which is :default in all website all over*/
+   border-radius: $default-radius;
+}
+.br-0{ /*br = border-radius 0*/
+    border-radius: 0;
+}

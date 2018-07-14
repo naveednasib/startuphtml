@@ -1,0 +1,8 @@
+.p-btn{
+background-color:$p-color;
+@extend .w;
+}
+.s-btn{
+    background-color:$s-color;  
+    @extend .w;
+}

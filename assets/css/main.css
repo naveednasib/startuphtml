@@ -2,6 +2,7 @@
 /*primary color*/
 /*secondary color*/
 /*grey color*/
+/*dark grey color*/
 /*default padding which is standard on all website use all over the website same  */
 /*default margin which is standard on all website use all over the website same  */
 /*********************
@@ -31,12 +32,72 @@
   /*background-color white*/
   background-color: white; }
 
+/*~~~~~~~~~~~~ fonts~~~~~~~~~~~~~*/
 .w, .p-btn, .s-btn {
   /*color white*/
   color: white; }
 
 .p {
   color: #ea7f1e; }
+
+.s {
+  color: #00457c; }
+
+.g {
+  color: #666666; }
+
+p, span, i, a, button, dl {
+  font-size: 45%; }
+  @media (max-width: 767px) {
+    p, span, i, a, button, dl {
+      font-size: 65%; } }
+
+.f-50 {
+  font-size: 50%; }
+
+.f-75 {
+  font-size: 75%; }
+
+.f-100 {
+  font-size: 100%; }
+
+/*~~~~~~~~~~~~ fonts~~~~~~~~~~~~~*/
+.bg-gre {
+  position: relative; }
+  .bg-gre:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1; }
+
+.bg-cover {
+  background-size: cover; }
+
+.bg-center {
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.p-bg:before {
+  background-color: #ea7f1e; }
+
+.s-bg:before {
+  background-color: #00457c;
+  opacity: 0.7; }
+
+.h-100 {
+  min-height: 100vh; }
+
+.h-50 {
+  min-height: 50vh; }
+
+.be-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .mid-container {
   max-width: 1170px;
@@ -54,17 +115,17 @@
 .p-15 {
   padding: 15px; }
 
-.p-l {
-  padding-left: 15px; }
+.m-l {
+  margin-left: 15px; }
 
-.p-t {
-  padding-top: 15px; }
+.m-t {
+  margin-top: 15px; }
 
-.p-b {
-  padding-top: 15px; }
+.m-b {
+  margin-top: 15px; }
 
-.p-r {
-  padding-right: 15px; }
+.m-r {
+  margin-right: 15px; }
 
 /*~~~~~~ paddings $DefaultPadding refer from varaible in framework folder ~~~~~~ */
 .p-0 {
@@ -97,6 +158,14 @@
 
 .section {
   padding: 60px 15px; }
+  @media (max-width: 767px) {
+    .section {
+      padding: 30px 15px; } }
+
+.article > .heading {
+  font-size: 100%; }
+.article > .subheading {
+  font-size: 80%; }
 
 header {
   background-color: #ea7f1e; }
@@ -107,9 +176,28 @@ header {
     font-weight: bold;
     padding: 15px;
     color: #00457c; }
+  header .navbar-expand-lg .navbar-nav li a {
+    font-size: 50%; }
 
 body {
-  padding-top: 78px; }
+  padding-top: 78px;
+  font-size: 36px; }
+  @media (max-width: 767px) {
+    body {
+      font-size: 24px; } }
+
+.flag {
+  width: 126px;
+  height: 76px;
+  background-image: url("../images/spirits/flag-spirits.png"); }
+
+.au {
+  background-position: 0 -76px; }
+
+.addres-container .tile .mr-auto {
+  max-width: 250px; }
+.addres-container .tile dl dt {
+  font-size: 110%; }
 
 .bg-slider {
   background: #7fa2bd;
@@ -124,11 +212,14 @@ body {
     .bg-slider .carousel-item .tile {
       padding: 60px 15px; }
       .bg-slider .carousel-item .tile .btn {
-        background-color: #ea7f1e;
         display: inline-block;
         padding: 15px 25px;
-        font-size: 1.2em;
+        font-size: 50%;
         margin-top: 5%; }
+    @media (max-width: 767px) {
+      .bg-slider .carousel-item .row {
+        flex-flow: column-reverse;
+        text-align: center; } }
   .bg-slider .carousel-indicators li {
     border-radius: 50%;
     height: 25px;
@@ -138,5 +229,31 @@ body {
     background-color: transparent; }
   .bg-slider .carousel-indicators .active {
     background-color: white; }
+  @media (max-width: 767px) {
+    .bg-slider .carousel-item {
+      padding: 0; }
+      .bg-slider .carousel-item .tile {
+        padding: 15px 15px 60px; } }
+
+.new-container .tile {
+  flex: 31%;
+  background-color: #f0f0f0;
+  padding: 15px;
+  margin-right: 20px; }
+  @media (max-width: 767px) {
+    .new-container .tile {
+      flex: 100%;
+      margin-right: auto;
+      margin-top: 15px; } }
+  .new-container .tile .new-heading {
+    font-size: 55%;
+    font-weight: bold;
+    height: 48px;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+  .new-container .tile .new-details {
+    height: 48px;
+    text-overflow: ellipsis;
+    overflow: hidden; }
 
 /*# sourceMappingURL=main.css.map */

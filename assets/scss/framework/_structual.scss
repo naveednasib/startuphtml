@@ -30,20 +30,20 @@
     padding:$default-margin;
 }
 
-.p-l{
-    padding-left:$default-margin;
+.m-l{
+    margin-left:$default-margin;
 }
 
-.p-t{
-    padding-top:$default-margin;
+.m-t{
+    margin-top:$default-margin;
 }
 
-.p-b{
-    padding-top:$default-margin;
+.m-b{
+    margin-top:$default-margin;
 }
 
-.p-r{
-    padding-right:$default-margin;
+.m-r{
+    margin-right:$default-margin;
 }
 
 /*~~~~~~ paddings $DefaultPadding refer from varaible in framework folder ~~~~~~ */
@@ -89,4 +89,18 @@ padding:0;
 
 .section{
     padding: 60px $default-padding;
+    @include vp_max(767px){
+        padding: 30px $default-padding; 
+    }
 }
+
+
+
+.article{
+
+    > .heading{font-size:100%;}
+    > .subheading{font-size:80%;}
+    > .para{}
+}
+
+

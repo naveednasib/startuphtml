@@ -5,13 +5,17 @@
         padding:60px 0;
         .tile{
             padding:60px 15px;
-            .btn{
-                background-color: #ea7f1e;
+            .btn{              
                 display: inline-block;
                 padding: 15px 25px;
-                font-size: 1.2em;
+                font-size: 50%;
                 margin-top: 5%;
             }
+        }
+        @include vp_max(767px){
+           .row{ flex-flow:column-reverse;
+                text-align: center;}
+             
         }
     }
     .carousel-indicators li{
@@ -23,4 +27,13 @@
         background-color:transparent;
     }
     .carousel-indicators .active{ background-color:white;}
+
+    @include vp_max(767px){
+        .carousel-item {
+            padding: 0;
+            .tile{
+                padding: 15px 15px 60px;
+            }
+        }
+    }
 }

@@ -1,3 +1,34 @@
 body{
     padding-top: 78px;
+    font-size:36px;
+    @include vp_max(767px){
+        font-size:24px;   
+    }
+}
+
+
+
+
+.flag{
+    width:126px ;
+    height:76px ;
+    background-image:url('../images/spirits/flag-spirits.png');
+}
+.usa{}
+.au{background-position: 0 -76px;}
+
+
+
+.addres-container{
+    .tile{
+        .mr-auto{
+         
+            max-width: 250px;
+        }
+        dl{
+            dt{
+                font-size:110%;
+            }
+        }
+    }
 }

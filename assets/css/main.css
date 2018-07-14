@@ -81,7 +81,7 @@
   padding-top: 15px; }
 
 .p-b {
-  padding-top: 15px; }
+  padding-bottom: 15px; }
 
 .p-r {
   padding-right: 15px; }
@@ -95,6 +95,9 @@
   /*br = border-radius 0*/
   border-radius: 0; }
 
+.section {
+  padding: 60px 15px; }
+
 header {
   background-color: #ea7f1e; }
   header .navbar-light .navbar-nav .active > .nav-link,
@@ -104,5 +107,36 @@ header {
     font-weight: bold;
     padding: 15px;
     color: #00457c; }
+
+body {
+  padding-top: 78px; }
+
+.bg-slider {
+  background: #7fa2bd;
+  background: -moz-linear-gradient(left, #7fa2bd 0%, #7fa2bd 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #7fa2bd), color-stop(100%, #7fa2bd));
+  background: -webkit-linear-gradient(left, #7fa2bd 0%, #7fa2bd 100%);
+  background: -o-linear-gradient(left, #7fa2bd 0%, #7fa2bd 100%);
+  background: -ms-linear-gradient(left, #7fa2bd 0%, #7fa2bd 100%);
+  background: linear-gradient(to right, #7fa2bd 0%, #7fa2bd 100%); }
+  .bg-slider .carousel-item {
+    padding: 60px 0; }
+    .bg-slider .carousel-item .tile {
+      padding: 60px 15px; }
+      .bg-slider .carousel-item .tile .btn {
+        background-color: #ea7f1e;
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 1.2em;
+        margin-top: 5%; }
+  .bg-slider .carousel-indicators li {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: transparent; }
+  .bg-slider .carousel-indicators .active {
+    background-color: white; }
 
 /*# sourceMappingURL=main.css.map */

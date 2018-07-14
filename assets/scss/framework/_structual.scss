@@ -66,7 +66,7 @@ padding:0;
 }
 
 .p-b{
-    padding-top:$default-padding;
+    padding-bottom:$default-padding;
 }
 
 .p-r{
@@ -82,4 +82,11 @@ padding:0;
 }
 .br-0{ /*br = border-radius 0*/
     border-radius: 0;
+}
+
+
+
+
+.section{
+    padding: 60px $default-padding;
 }

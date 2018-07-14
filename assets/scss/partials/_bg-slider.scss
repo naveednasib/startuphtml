@@ -1,0 +1,26 @@
+.bg-slider{
+    @include bi_gre(#7fa2bd,#7fa2bd);
+
+    .carousel-item {
+        padding:60px 0;
+        .tile{
+            padding:60px 15px;
+            .btn{
+                background-color: #ea7f1e;
+                display: inline-block;
+                padding: 15px 25px;
+                font-size: 1.2em;
+                margin-top: 5%;
+            }
+        }
+    }
+    .carousel-indicators li{
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        border: 2px solid white;
+        background-color:transparent;
+    }
+    .carousel-indicators .active{ background-color:white;}
+}

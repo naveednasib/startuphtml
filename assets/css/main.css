@@ -46,10 +46,10 @@
 .g {
   color: #666666; }
 
-p, span, i, a, button, dl {
+p, span, i, button, dl {
   font-size: 45%; }
   @media (max-width: 767px) {
-    p, span, i, a, button, dl {
+    p, span, i, button, dl {
       font-size: 65%; } }
 
 .f-50 {
@@ -167,6 +167,58 @@ p, span, i, a, button, dl {
 .article > .subheading {
   font-size: 80%; }
 
+.figuare-logo {
+  display: inline-block;
+  min-width: 48%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.logos {
+  background-image: url("/assets/images/spirits/logos-relativelinks_03.png"); }
+
+.webophoebia {
+  background-position: -13px -448px; }
+
+.standards-australia {
+  background-position: 0 -100px; }
+
+.ul-logo {
+  background-position: -3px 0px; }
+
+.wifi-planet {
+  background-position: -1px -185px; }
+
+.fc-log {
+  background-position: -8px -610px; }
+
+.singapore-logo {
+  background-position: -8px -555px; }
+
+.hongkong-logo {
+  background-position: -8px -966px; }
+
+.acma {
+  background-position: -5px -668px; }
+
+.telec {
+  background-position: -5px -707px; }
+
+.icsa {
+  background-position: -8px -782px; }
+
+.cenelec {
+  background-position: -9px -880px; }
+
+.etsi {
+  background-position: -20px -494px; }
+
+.asa {
+  background-position: -16px -257px; }
+
+.austest {
+  background-position: -16px -317px; }
+
 header {
   background-color: #ea7f1e; }
   header .navbar-light .navbar-nav .active > .nav-link,
@@ -198,6 +250,14 @@ body {
   max-width: 250px; }
 .addres-container .tile dl dt {
   font-size: 110%; }
+
+.para-type h2, .para-type h3 {
+  color: #00457c;
+  margin: 20px auto; }
+.para-type p {
+  color: #666666; }
+.para-type figure {
+  margin: 25px auto; }
 
 .bg-slider {
   background: #7fa2bd;

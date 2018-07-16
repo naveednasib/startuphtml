@@ -32,3 +32,19 @@ body{
         }
     }
 }
+
+
+.para-type{
+
+    h2, h3,{
+        color:$s-color;
+        margin: 20px auto;
+
+    }
+    p{
+        color:$dg-color;
+    }
+    figure{
+        margin: 25px auto;
+    }
+}

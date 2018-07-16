@@ -348,6 +348,10 @@ footer a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+  @media (max-width: 767px) {
+    .checkbox-container {
+      margin-top: 15px;
+      margin-bottom: 15px; } }
 
 /* Hide the browser's default checkbox */
 .checkbox-container input {

@@ -12,6 +12,10 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    @include vp_max(767px){
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
 
 /* Hide the browser's default checkbox */

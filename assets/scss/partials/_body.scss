@@ -48,3 +48,25 @@ body{
         margin: 25px auto;
     }
 }
+
+footer{
+    a{font-size:45%;}
+}
+
+
+
+.address-contact-us{
+
+    .info-holder{
+        display: block;
+        padding:5px 0;
+    }
+}
+
+.contact-us-form-container{
+    .form-control{
+        border-radius: 0;
+        border-color:$s-color;
+        padding:$default-padding;
+    }
+}

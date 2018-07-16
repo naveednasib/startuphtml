@@ -37,8 +37,12 @@ color:white;
 
 
 
-p,span,i,button,dl{font-size:45%;
+p,span,i,label,small,button,dl{font-size:45%;
      @include vp_max(767px){font-size:65%;}
+    }
+    small{font-size:35%;
+        @include vp_max(767px){font-size:45%;}
+
     }
 
 .f-50{

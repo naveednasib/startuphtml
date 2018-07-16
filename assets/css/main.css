@@ -128,7 +128,7 @@ small {
   margin-top: 15px; }
 
 .m-b {
-  margin-top: 15px; }
+  margin-bottom: 15px; }
 
 .m-r {
   margin-right: 15px; }
@@ -276,6 +276,31 @@ footer a {
   border-radius: 0;
   border-color: #00457c;
   padding: 15px; }
+
+.services-cotnaner .left-panel {
+  font-size: 50%;
+  padding-left: 0; }
+  .services-cotnaner .left-panel ul {
+    border: 0; }
+    .services-cotnaner .left-panel ul li {
+      display: block;
+      width: 100%; }
+      .services-cotnaner .left-panel ul li a {
+        border: 0;
+        font-weight: bold;
+        border-radius: 0;
+        padding: 30px 15px;
+        background-color: #f0f0f0;
+        margin-bottom: 5px;
+        color: #00457c; }
+  .services-cotnaner .left-panel .nav-tabs .nav-item.show .nav-link, .services-cotnaner .left-panel .nav-tabs .nav-link.active {
+    background-color: #fe4d11;
+    color: white;
+    font-weight: bold; }
+.services-cotnaner .table-bordered {
+  border: 0; }
+  .services-cotnaner .table-bordered td {
+    border: 1px solid #00457c; }
 
 .bg-slider {
   background: #7fa2bd;

@@ -70,3 +70,41 @@ footer{
         padding:$default-padding;
     }
 }
+
+
+.services-cotnaner{
+    .left-panel{
+        font-size:50%;
+        padding-left: 0;
+        ul{
+            border:0;
+            li{
+                display: block;
+                width: 100%;
+                a{
+                    border:0;
+                    font-weight: bold;
+                    border-radius: 0;
+                    padding: 30px 15px;
+                    background-color: $g-color;
+                    margin-bottom: 5px;
+                    color:$s-color  ;
+                }
+
+            }
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+            background-color: #fe4d11;
+            color:white;
+            font-weight: bold;
+        }
+    }
+
+    .table-bordered{
+        border: 0;
+        td{
+            border:1px solid $s-color;
+        }
+    }
+
+}

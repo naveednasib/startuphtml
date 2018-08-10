@@ -1,5 +1,5 @@
 body{
-    padding-top: 78px;
+    padding-top: 130px;
     font-size:36px;
     @include vp_max(767px){
         font-size:24px;   
@@ -8,103 +8,15 @@ body{
 
 
 
-
-.flag{
-    width:126px ;
-    height:76px ;
-    background-image:url('../images/spirits/flag-spirits.png');
-}
-.usa{}
-.au{background-position: 0 -76px;}
-
-
-
-.addres-container{
-    .tile{
-        .mr-auto{
-         
-            max-width: 250px;
-        }
-        dl{
-            dt{
-                font-size:110%;
-            }
-        }
-    }
-}
-
-
-.para-type{
-
-    h2, h3,{
-        color:$s-color;
-        margin: 20px auto;
-
-    }
-    p{
-        color:$dg-color;
-    }
-    figure{
-        margin: 25px auto;
-    }
-}
-
 footer{
     a{font-size:45%;}
 }
 
-
-
-.address-contact-us{
-
-    .info-holder{
-        display: block;
-        padding:5px 0;
-    }
-}
-
-.contact-us-form-container{
-    .form-control{
-        border-radius: 0;
-        border-color:$s-color;
-        padding:$default-padding;
-    }
-}
-
-
-.services-cotnaner{
-    .left-panel{
-        font-size:50%;
-        padding-left: 0;
-        ul{
-            border:0;
-            li{
-                display: block;
-                width: 100%;
-                a{
-                    border:0;
-                    font-weight: bold;
-                    border-radius: 0;
-                    padding: 30px 15px;
-                    background-color: $g-color;
-                    margin-bottom: 5px;
-                    color:$s-color  ;
-                }
-
-            }
-        }
-        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-            background-color: #fe4d11;
-            color:white;
-            font-weight: bold;
-        }
-    }
-
-    .table-bordered{
-        border: 0;
-        td{
-            border:1px solid $s-color;
-        }
-    }
-
+.card-container{
+    padding: 41px 60px 40px 65px;
+    background-color: $w;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 1px 1px 22px rgba(157, 184, 209, 0.19);
+    border-radius: 3px;
 }

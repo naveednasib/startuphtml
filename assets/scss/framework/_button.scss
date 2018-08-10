@@ -1,8 +1,19 @@
 .p-btn{
-background-color:$p-color;
+background-color:$bb;
 @extend .w;
+&:hover{
+    color:$w;
+    opacity: 0.8;
+}
 }
 .s-btn{
-    background-color:$s-color;  
+    background-color:$sb;  
     @extend .w;
+    &:hover{
+        color:$w;
+        opacity: 0.8;
+    }
 }
+
+
+

@@ -4,3 +4,4 @@ assets/.sass-cache/*
 
 assets/css/main.css.map
 assets/admin-lite/css/skins/white-skin.css.map
+assets/css/*.map

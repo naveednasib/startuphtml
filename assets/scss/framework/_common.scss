@@ -1,21 +1,24 @@
 // background color
-.bg-pri{
+.bg-pri,.bg-p{
 background-color:$p-color;
 }
 
-.bg-sec{
+.bg-sec,.bg-s{
     background-color:$s-color;
 }
 
-.bg-grey{
+.bg-grey,.bg-g{
     background-color:$g-color;
 }
 
 
 .bg-w{ /*background-color white*/
-    background-color:white;
+    background-color:$w;
 }
 
+.bg-o{
+    background-color: $o;
+}
 
 /*~~~~~~~~~~~~ fonts~~~~~~~~~~~~~*/
 .w{ /*color white*/
@@ -34,17 +37,20 @@ color:white;
     color:$dg-color;
 }
 
+.o{
+    color: $o;
+}
 
 
 
 
-p,span,i,label,small,button,dl{font-size:45%;
-     @include vp_max(767px){font-size:65%;}
-    }
-    small{font-size:35%;
-        @include vp_max(767px){font-size:45%;}
+// p,span,i,label,small,button,dl{font-size:45%;
+//      @include vp_max(767px){font-size:65%;}
+//     }
+//     small{font-size:35%;
+//         @include vp_max(767px){font-size:45%;}
 
-    }
+//     }
 
 .f-50{
     font-size:50%
@@ -118,3 +124,8 @@ p,span,i,label,small,button,dl{font-size:45%;
     justify-content: center;
     align-items: center;
 }
+
+
+.border-g{
+    border:1px solid $g-color;
+    }

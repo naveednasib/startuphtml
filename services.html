@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Member Area</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="/assets/bootstrap/v3/bootstrap.min.css" />
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/assets/css/adminLite/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="/assets/css/adminLite/white-skin.min.css">
+  <link rel="stylesheet" href="/assets/css/dashboard.min.css">
+  <!-- Font Awesome -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+
+    <!-- Main Header -->
+    <header class="main-header">
+
+      <!-- Logo -->
+      <a href="/" class="logo">
+        <svg width="122px" ;height="49px" ;="" version="1.1" x="0px" y="0px" viewBox="0 0 819 306" enable-background="new 0 0 819 306"
+          xml:space="preserve">
+          <g>
+            <g>
+              <path fill="#21A7F4" d="M304.246,45.879c-125.7-79.464-229.361-21.646-259.87-0.639c-3.385,2.331-5.978,5.549-7.565,9.221    c40,35.862,74.569,46.094,74.569,46.094c70.394-44.796,126.19,1.259,126.19,1.259c44.034-16.912,74.859-46.083,74.999-46.215    C310.86,51.654,307.988,48.245,304.246,45.879z"></path>
+              <g>
+                <path fill="#29D9FF" d="M314.334,63.451c-0.09-2.746-0.705-5.401-1.765-7.85c-0.139,0.132-31.309,29.303-75.343,46.215     C239.766,195.949,179,212.832,174,213.885v86.89c1-0.057,2.289-0.265,3.207-0.648C309.52,244.913,315.652,103.736,314.334,63.451     z"></path>
+                <path fill="#29D9FF" d="M174.291,213.898c-0.121,0.03-0.012,0.044-0.012,0.044c-69.84-22.479-62.986-113.387-62.986-113.387     S76.768,90.323,36.768,54.462c-1.13,2.614-1.732,5.456-1.753,8.382c-1.252,178.63,114.674,229.538,136.048,237.404     c1.149,0.423,2.021,0.596,3.222,0.533c0.018-0.001-0.286-0.004-0.286-0.005v-86.89C174,213.889,174.306,213.895,174.291,213.898z     "></path>
+              </g>
+              <path fill="#27ABF7" d="M314.334,63.451c-0.09-2.746-0.705-5.401-1.765-7.85c-0.139,0.132-30.991,29.303-75.025,46.215    c2.541,94.133-58.675,111.074-63.105,112.127l0.198,86.833c0.738-0.057,1.971-0.265,2.889-0.648    C309.838,244.913,315.652,103.736,314.334,63.451z"></path>
+            </g>
+            <g id="ivacyText" enable-background="new    ">
+              <path d="M384.331,187.397v-84.016h15.222v84.016H384.331z"></path>
+              <path d="M479.319,103.382h15.458l-37.406,84.016h-12.39l-37.406-84.016h15.813l27.966,64.899L479.319,103.382z"></path>
+              <path d="M558.97,187.397l-8.378-19.706h-41.064l-8.496,19.706h-15.34l37.996-84.016h12.391l38.113,84.016H558.97z     M514.602,155.892h30.916l-15.458-35.99L514.602,155.892z"></path>
+              <path d="M597.144,183.149c-6.176-3.54-10.915-8.555-14.219-15.045s-4.956-14.101-4.956-22.833    c0-8.652,1.652-16.225,4.956-22.715s8.043-11.485,14.219-14.986c6.175-3.499,13.394-5.251,21.653-5.251    c5.664,0,10.993,0.885,15.989,2.655c4.994,1.77,9.145,4.229,12.449,7.375l-4.957,11.092c-3.775-3.068-7.533-5.29-11.268-6.667    c-3.738-1.375-7.729-2.065-11.978-2.065c-8.104,0-14.378,2.637-18.821,7.906c-4.445,5.271-6.667,12.823-6.667,22.656    c0,9.912,2.201,17.523,6.608,22.833c4.404,5.31,10.697,7.965,18.88,7.965c4.248,0,8.239-0.688,11.978-2.064    c3.734-1.376,7.492-3.6,11.268-6.667l4.957,11.092c-3.305,3.147-7.455,5.604-12.449,7.375c-4.996,1.77-10.325,2.654-15.989,2.654    C610.537,188.459,603.318,186.689,597.144,183.149z"></path>
+              <path d="M729.719,103.382l-34.103,50.739v33.276h-15.222v-33.276l-34.102-50.739h17.346l24.308,37.996    l24.426-37.996H729.719z"></path>
+            </g>
+          </g>
+        </svg>
+        <!-- mini logo for sidebar mini 50x50 pixels
+        <span class="logo-mini"><b>A</b>LT</span>
+        logo for regular state and mobile devices 
+        <span class="logo-lg"><b>Admin</b>LTE</span>-->
+      </a>
+
+      <!-- Header Navbar -->
+      <nav class="navbar navbar-static-top" role="navigation">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- Messages: style can be found in dropdown.less-->
+            <li class="dropdown messages-menu">
+              <!-- Menu toggle button -->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-envelope-o"></i>
+                <span class="label label-success">4</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 4 messages</li>
+                <li>
+                  <!-- inner menu: contains the messages -->
+                  <ul class="menu">
+                    <li>
+                      <!-- start message -->
+                      <a href="#">
+                     
+                        <!-- Message title and timestamp -->
+                        <h4>
+                         Ivacy launch new feature
+                          <!-- <small> <i class="fa fa-clock-o"></i> 5 mins</small> -->
+                        </h4>
+                        <!-- The message -->
+                        <p>Check It Today</p>
+                      </a>
+                    </li>
+                    <!-- end message -->
+                  </ul>
+                  <!-- /.menu -->
+                </li>
+                <li class="footer">
+                  <!-- <a href="#">See All Messages</a> -->
+                </li>
+              </ul>
+            </li>
+            <!-- /.messages-menu -->
+
+            <!-- Notifications Menu -->
+            <li class="dropdown notifications-menu">
+              <!-- Menu toggle button -->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-bell-o"></i>
+                <span class="label label-warning">10</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 10 notifications</li>
+                <li>
+                  <!-- Inner Menu: contains the notifications -->
+                  <ul class="menu">
+                    <li>
+                      <!-- start notification -->
+                      <a href="#">
+                        <i class="fa fa-users text-aqua"></i> Your are not Nat Firewall 
+                      </a>
+                    </li>
+                    <!-- end notification -->
+                  </ul>
+                </li>
+                <li class="footer">
+                  <!-- <a href="#">View all</a> -->
+                </li>
+              </ul>
+            </li>
+            <!-- Tasks Menu -->
+            <li class="dropdown tasks-menu">
+              <!-- Menu Toggle Button -->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-flag-o"></i>
+                <span class="label label-danger">1</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 1 tasks</li>
+                <li>
+                  <!-- Inner menu: contains the tasks -->
+                  <ul class="menu">
+                    <li>
+                      <!-- Task item -->
+                      <a href="#">
+                        <!-- Task title and progress text -->
+                        <h3>
+                         Consume connections
+                          <small class="pull-right">80%</small>
+                        </h3>
+                        <!-- The progress bar -->
+                        <div class="progress xs">
+                          <!-- Change the css width attribute to simulate progress -->
+                          <div class="progress-bar progress-bar-danger" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">80% Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                  </ul>
+                </li>
+                <li class="footer">
+                  <!-- <a href="#">View all tasks</a> -->
+                </li>
+              </ul>
+            </li>
+            <!-- User Account Menu -->
+            <li class="dropdown user user-menu">
+              <!-- Menu Toggle Button -->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <!-- The user image in the navbar-->
+                <img src="assets/images/console/avatar.png" class="user-image" alt="  Adeeb Aslam">
+                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                <span class="hidden-xs"> Adeeb Aslam</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- The user image in the menu -->
+                <li class="user-header">
+                  <img src="assets/images/console/avatar-lg.png" class="img-circle" alt="  Adeeb Aslam">
+
+                  <p>
+                    Adeeb Aslam
+                    <small>Member since Nov. 2012</small>
+                  </p>
+                </li>
+
+                <!-- Menu Footer-->
+                <li class="user-footer">
+
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <!-- Control Sidebar Toggle Button -->
+            <li>
+              <a href="#" data-toggle="control-sidebar">
+                <i class="fa fa-gears"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+
+
+
+
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu" data-widget="tree">
+
+          <!-- Optionally, you can add icons to the links -->
+          <li class="active">
+            <a href="#">
+              <i class="fa fa-home"></i>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-wrench"></i>
+              <span>Services</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="#">My services</a>
+              </li>
+              <li>
+                <a href="#">Order new</a>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-money"></i>
+              <span>Billing</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="#">My Invoices</a>
+              </li>
+
+              <li>
+                <a href="#">My Quotes</a>
+              </li>
+
+              <li>
+                <a href="#">Mass Payment</a>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-headphones"></i>
+              <span>Support</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="#">Tickets</a>
+              </li>
+              <li>
+                <a href="#">Knowledgebase</a>
+              </li>
+              <li>
+                <a href="#">Downloads</a>
+              </li>
+              <li>
+                <a href="#">Network Status</a>
+              </li>
+            </ul>
+          </li>
+
+
+        
+
+            <li>
+           
+                <a href="#">
+                    <i class="fa fa-shield"></i>
+                    <span>Nat Firewall</span>
+                  </a>
+            </li>
+
+            
+            <li>
+               
+                <a href="#">
+                    <i class="fa fa-handshake-o"></i>
+                    <span>Affiliates</span>
+                  </a>
+            </li>
+
+        </ul>
+        <!-- /.sidebar-menu -->
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <article>
+          <h1>
+            <strong> My Services</strong>
+
+          </h1>
+          <p><strong class='g'>Invoices history dummmy dummmyInvoices history dummmy dummmy</strong> </p>
+        </article>
+
+        <!-- <ol class="breadcrumb">
+          <li>
+            <a href="#">
+              <i class="fa fa-dashboard"></i> Level</a>
+          </li>
+          <li class="active">Here</li>
+        </ol> -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content container-fluid">
+
+        <!--------------------------
+          | Your Page Content Here |
+          -------------------------->
+
+          <div class="box-body  bg-w d-p ">
+            <h5>562 Records Found, Page 1 of 57</h5>
+              <table class='table'>
+                <tr>
+                  <th>Product/Service</th>
+                  <th>Price</th>
+                  <th>Billing Cycle </th>
+                  <th>Next Due Date</th>
+                  <th>Status </th>
+                  <th> </th>
+                </tr>
+                <tr>
+                  <td>Basic Ivacy Group - 3 Day Account</td>
+                  <td>$2.50 USD </td>
+                  <td>One Time</td>
+                  <td>25/08/2017</td>
+                  <td>
+                    <span class="badge ">cancelled</span>
+                  </td>
+                  <td>
+                    <a href='#' data-toggle="modal" data-target=".services-details" class=' o'>
+                      <span class="badge badge-primary bg-o">View Details</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                    <td>Basic Ivacy Group - 3 Day Account</td>
+                    <td>$2.50 USD </td>
+                    <td>One Time</td>
+                    <td>25/08/2017</td>
+                    <td>
+                      <span class="badge bg-s">paid</span>
+                    </td>
+                    <td>
+                      <a href='#' data-toggle="modal" data-target=".services-details" class=' o'>
+                        <span class="badge badge-primary bg-o">View Details</span>
+                      </a>
+                    </td>
+                  </tr>
+          
+                </tr>
+              </table>
+            </div>
+
+
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- To the right -->
+      <div class="pull-right hidden-xs">
+        Anything you want
+      </div>
+      <!-- Default to the left -->
+      <strong>Copyright &copy; 2016
+        <a href="#">Company</a>.</strong> All rights reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Create the tabs -->
+      <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+        <li class="active">
+          <a href="#control-sidebar-home-tab" data-toggle="tab">
+            <i class="fa fa-home"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#control-sidebar-settings-tab" data-toggle="tab">
+            <i class="fa fa-gears"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- Home tab content -->
+        <div class="tab-pane active" id="control-sidebar-home-tab">
+          <h3 class="control-sidebar-heading"><strong>Account </strong></h3>
+          <ul class="control-sidebar-menu">
+            <li>
+              <a href="javascript:;">
+                <i class="menu-icon fa fa-pencil bg-red"></i>
+
+                <div class="menu-info">
+                    <h4 class="control-sidebar-subheading"> Account Details</h4>
+                    <p>Change personal detail</p>
+                </div>
+              </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                  <i class="menu-icon fa fa-envelope-open-o bg-red"></i>
+  
+                  <div class="menu-info">
+                
+                    <h4 class="control-sidebar-subheading"> Emails</h4>
+                    <p>Here's a copy of the recent emails we've sent you</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                  <a href="javascript:;">
+                    <i class="menu-icon fa fa-shield bg-green"></i>
+    
+                    <div class="menu-info">
+                      <h4 class="control-sidebar-subheading"> Data Protection Consent</h4>
+                      <p>Clear all your pervious data</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                      <i class="menu-icon fa fa-key bg-blue"></i>
+      
+                      <div class="menu-info">
+                        <h4 class="control-sidebar-subheading">Password</h4>
+                        <p>Change Password</p>
+                      </div>
+                    </a>
+                  </li>
+          </ul>
+          <!-- /.control-sidebar-menu -->
+
+
+        </div>
+        <!-- /.tab-pane -->
+        <!-- Stats tab content -->
+        <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+        <!-- /.tab-pane -->
+        <!-- Settings tab content -->
+        <div class="tab-pane" id="control-sidebar-settings-tab">
+          <form method="post">
+            <h3 class="control-sidebar-heading">General Settings</h3>
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                Report panel usage
+                <input type="checkbox" class="pull-right" checked>
+              </label>
+
+              <p>
+                Some information about this general settings option
+              </p>
+            </div>
+            <!-- /.form-group -->
+          </form>
+        </div>
+        <!-- /.tab-pane -->
+      </div>
+    </aside>
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+    immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- Modal -->
+  <div class="modal fade services-details" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-s w">
+          <button type="button" class="close w" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3 class=' modal-title '>
+              3 Day Account
+           
+          </h3>
+       
+      
+        </div>
+        <div class="modal-body">
+
+        
+
+          <div class='border-g d-p'>
+            <div class='m-b'>
+              <strong>Information </strong>
+              <small class=' center-block'>Here is an overview of your product/service with us.</small>
+
+            </div>
+
+
+            <div class='row'>
+                <div class=' m-b col-sm-6 col-xs-12'>
+                    <strong class="center-block">  Registration Date:      </strong>25/08/2017
+                    <strong class="center-block">  Product/Service:        </strong>Basic Ivacy Group - 3 Day Account <span class='badge'>Cancelled</span>
+                    <strong class="center-block">  First Payment Amount:   </strong>$2.50 USD
+                    <strong class="center-block">  Product/Service:        </strong>One Time
+                    <strong class="center-block">  Payment Method:         </strong>Stripe
+                </div>
+                <div class=' m-b col-sm-6 col-xs-12'>
+                    <strong class="center-block">  Recurring Amount:      </strong>$0.00 USD
+                    <strong class="center-block">  Next Due Date:       </strong>25/08/2017                   
+                </div>
+            </div>
+
+
+          </div>
+
+      
+
+          <div class='border-g d-p'>
+            <div class='m-b'>
+              <strong>Addons </strong>
+              <small class=' center-block'>You have the following addons for this product.</small>
+            </div>
+
+            <div class=' m-b'>
+              <table class='table bg-g table-border '>
+                <tr>
+                  <th>Addon</th>
+                  <th>Pricing</th>
+                  <th>Next Due Date</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td class='bg-w txt-center' colspan='4'> No Addons Purchased Yet</td>
+                </tr>
+                <tr>
+                  <td >Nat Firewall</td>
+                  <td>$9.95 USD</td>
+                  <td >06/09/2018</td>
+                  <td> <span class='badge bg-o'>paid</span></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning" data-dismiss="modal">Download</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <!-- jQuery 3 -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- Bootstrap 3.3.7 -->
+  <script src="/assets/bootstrap/v3/bootstrap.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="/assets/js/adminLite/adminlte.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>

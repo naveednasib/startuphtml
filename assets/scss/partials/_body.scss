@@ -1,5 +1,4 @@
-body{
-    padding-top: 130px;
+body{   
     font-size:36px;
     @include vp_max(767px){
         font-size:24px;   
@@ -12,11 +11,7 @@ footer{
     a{font-size:45%;}
 }
 
-.card-container{
-    padding: 41px 60px 40px 65px;
-    background-color: $w;
-    max-width: 600px;
-    margin: auto;
-    box-shadow: 1px 1px 22px rgba(157, 184, 209, 0.19);
-    border-radius: 3px;
-}
+
+
+
+

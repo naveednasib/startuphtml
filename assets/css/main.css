@@ -5,8 +5,10 @@
 /*dark grey color*/
 /*blue using in button*/
 /*skyblue using in button*/
+/*text primary color */
 /*default padding which is standard on all website use all over the website same  */
 /*default margin which is standard on all website use all over the website same  */
+/*dashboard structure top height*/
 /*********************
   Mixins
 **********************/
@@ -27,18 +29,21 @@
     color: white;
     opacity: 0.8; }
 
-.bg-pri {
+.bg-pri, .bg-p {
   background-color: #f5fafd; }
 
-.bg-sec {
+.bg-sec, .bg-s {
   background-color: #0479ec; }
 
-.bg-grey {
+.bg-grey, .bg-g {
   background-color: #f0f0f0; }
 
 .bg-w {
   /*background-color white*/
   background-color: white; }
+
+.bg-o {
+  background-color: #f27624; }
 
 /*~~~~~~~~~~~~ fonts~~~~~~~~~~~~~*/
 .w, .p-btn, .s-btn {
@@ -54,17 +59,8 @@
 .g {
   color: #666666; }
 
-p, span, i, label, small, button, dl {
-  font-size: 45%; }
-  @media (max-width: 767px) {
-    p, span, i, label, small, button, dl {
-      font-size: 65%; } }
-
-small {
-  font-size: 35%; }
-  @media (max-width: 767px) {
-    small {
-      font-size: 45%; } }
+.o {
+  color: #f27624; }
 
 .f-50 {
   font-size: 50%; }
@@ -112,6 +108,9 @@ small {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.border-g {
+  border: 1px solid #f0f0f0; }
 
 .mid-container {
   max-width: 1170px;
@@ -213,7 +212,6 @@ header {
     width: 130px; }
 
 body {
-  padding-top: 130px;
   font-size: 36px; }
   @media (max-width: 767px) {
     body {
@@ -221,13 +219,5 @@ body {
 
 footer a {
   font-size: 45%; }
-
-.card-container {
-  padding: 41px 60px 40px 65px;
-  background-color: white;
-  max-width: 600px;
-  margin: auto;
-  box-shadow: 1px 1px 22px rgba(157, 184, 209, 0.19);
-  border-radius: 3px; }
 
 /*# sourceMappingURL=main.css.map */
